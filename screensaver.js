@@ -7,7 +7,7 @@
   el.className = "Screensaver";
   el.innerHTML = `<div>${(document.currentScript &&
     document.currentScript.getAttribute("message")) ||
-    location.hostname}</div>`;
+    window.location.hostname}</div>`;
 
   const width = el.offsetWidth;
   const height = el.offsetHeight;
@@ -65,4 +65,5 @@
   }
   disable();
   document.addEventListener("mousemove", disable);
+  document.addEventListener("keydown", disable);
 })();
