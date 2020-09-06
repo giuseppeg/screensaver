@@ -2,7 +2,7 @@
   const id = `s${Date.now()}`;
   const el = document.body.appendChild(document.createElement("div"));
   el.id = id;
-  el.style.position = "absolute";
+  el.style.position = "fixed";
 
   el.className = "Screensaver";
   el.innerHTML = `<div>${(document.currentScript &&
