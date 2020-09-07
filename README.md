@@ -12,5 +12,11 @@ Arguably the most useful library for your website! Starts a screensaver after `t
 <script src="/path/to/screensaver.js" timeout="180000" message="Giuseppe Gurgone"></script>
 ```
 
-`timeout` is optional. Its default value is `180000`.
-`message` is optional. Its default value is `window.location.hostname`.
+### Settings
+
+* `timeout` is optional. Its default value is `180000`.
+* `message` is optional. Its default value is `window.location.hostname`.
+
+## Share
+
+Share your screensaver screenshots on Twitter with the hashtag `#screensaverjs` and I'll RT ❤️
