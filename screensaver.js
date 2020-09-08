@@ -14,7 +14,7 @@
       
 
       const style = document.body.appendChild(document.createElement('style'));
-      const stylesAttribute = currentScript ? JSON.parse(currentScript.getAttribute('styles').replace(/s/g, '').replace(/['`]/g, '"').replace(/,}$/g, '}')) : {};
+      const stylesAttribute = currentScript ? JSON.parse(currentScript.getAttribute('styles').replace(/\s+/g, '').replace(/['`]/g, '"').replace(/,}$/g, '}')) : {};
       const styles = Object.keys(stylesAttribute).map(k => `${k}: ${stylesAttribute[k]};`).join('\n');
 
       style.textContent = `
