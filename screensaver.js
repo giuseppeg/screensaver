@@ -65,6 +65,7 @@
       disable();
       document.addEventListener("mousemove", disable);
       document.addEventListener("keydown", disable);
+      document.addEventListener("scroll", disable);
     },
     { once: true }
   );
